@@ -1,23 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
 
+import Welcome from '../components/welcome'
 
-export default function HomeMod() {
-  return (
-    <div style={{ color: `purple` }}>
-      <h1>Hello Gatsby!</h1>
-      <p>What a world.</p>
-      <Link to='/about'>About</Link>
-    </div>
-  );
-}
+const Index = () => (
+  <>
+    <Welcome />
 
-export function Home() {
-  return (
-    <div style={{ color: `purple` }}>
-      <h1>Hello Gatsby!</h1>
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
-  )
-}
+    {/* TODO: delete */}
+    <div className="vh-100"></div>
+    <h3 id="option">I‘m an option</h3>
+  </>
+);
+
+export default Index;
