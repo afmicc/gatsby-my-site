@@ -1,0 +1,120 @@
+@import './constants.scss';
+
+.svg {
+  &__wave {
+    &__path {
+      fill: $gradientEndingColor;
+      fill-opacity: 1;
+    }
+  }
+
+  &__logo {
+    fill: $transparent;
+    width: $logoContainerSizeSVG;
+    height: $logoContainerSizeSVG;
+
+    stop:nth-child(1) {
+      // stop-color: $gradientBeginningColor;
+      stop-color: $logoGradientBeginningColor;
+    }
+
+    stop:nth-child(2) {
+      // stop-color: $gradientEndingColor;
+      stop-color: $logoGradientEndingColor;
+    }
+
+    &__path {
+      stroke-width: 7;
+    }
+  }
+}
+
+.welcome {
+  background-image: $welcomeGradient;
+
+  &__container {
+    color: $welcomeTitlesColor;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      font-size: $welcomeTitleFontSize;
+      margin: 1rem 0;
+    }
+
+    &__subtitle {
+      font-size: $welcomeSubtitleFontSize;
+      margin: 0;
+    }
+
+    &__buttons {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.menu {
+  &__container {
+    padding: 1.3rem;
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    transition: background-color 2s ease;
+    &--background {
+      background-color: $gradientBeginningColor;
+      box-shadow: 0 10px 6px rgba(0, 0, 0, 0.4);;
+    }
+
+    &__option {
+      margin: 0 3rem;
+      font-size: $menuOptionFontSize;
+      font-weight: 500;
+
+      &__link {
+        color: $menuOptionColor;
+        text-decoration: none;
+
+        &:hover {
+          color: $gradientEndingColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.action {
+  cursor: pointer;
+  border: solid 4px;
+  border-radius: 30px;
+  margin: 1rem 4rem;
+  padding: 1rem 4rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &__primary {
+    border-color: $primaryButtonBorderColor;
+    background-color: $primaryButtonBackgroundColor;
+    color: $primaryButtonTextColor;
+  }
+
+  &__secondary {
+    border-color: $secondaryButtonBorderColor;
+    color: $secondaryButtonTextColor;
+  }
+
+  &:hover {
+    border-color: $actionButtonHoverBorderColor;
+    background-color: $actionButtonHoverBackgroundColor;
+    color: $actionButtonHoverTextColor;
+  }
+}

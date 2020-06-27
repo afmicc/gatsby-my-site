@@ -1,0 +1,32 @@
+/* ------ Colors ------ */
+
+$transparent: #ffffff00;
+$gradientBeginningColor: #330867;
+$gradientEndingColor: #30cfd0;
+$welcomeGradient: linear-gradient(to top, $gradientEndingColor 0%, $gradientBeginningColor 100%);
+$menuOptionColor: white;
+$welcomeTitlesColor: white;
+
+$primaryButtonBorderColor: #ffc107;
+$primaryButtonBackgroundColor: #ffc107;
+$primaryButtonTextColor: white;
+
+$secondaryButtonBorderColor: white;
+$secondaryButtonTextColor: white;
+
+$actionButtonHoverBorderColor: white;
+$actionButtonHoverBackgroundColor: white;
+$actionButtonHoverTextColor: $gradientEndingColor;
+
+/* ------ Fonts ------ */
+
+$baseFontSize: 1rem;
+$menuOptionFontSize: 1.3rem;
+$welcomeTitleFontSize: 6rem;
+$welcomeSubtitleFontSize: $welcomeTitleFontSize * 0.4;
+
+/* ------ SVG ------ */
+
+$logoContainerSizeSVG: 19.25rem;
+$logoGradientBeginningColor: white; // $gradientBeginningColor;
+$logoGradientEndingColor: white; // $gradientEndingColor;
