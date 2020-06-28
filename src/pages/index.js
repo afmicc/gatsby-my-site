@@ -4,6 +4,8 @@ import Welcome from '../components/welcome'
 
 const Index = () => (
   <>
+    <hidden id='top'/>
+
     <Welcome />
 
     {/* TODO: delete */}

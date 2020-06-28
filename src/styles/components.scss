@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 
     &__title {
       font-size: $welcomeTitleFontSize;
@@ -58,12 +58,18 @@
 
 .menu {
   &__container {
-    padding: 1.3rem;
+    $xPadding: 1.3rem;
+    $yPadding: .8rem;
+    $boxWidth: calc(100% - #{2 * $xPadding});
+
+    padding: $yPadding $xPadding;
     position: fixed;
+    width: $boxWidth;
+    z-index: 99;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
 
     transition: background-color 2s ease;
     &--background {
@@ -71,18 +77,59 @@
       box-shadow: 0 10px 6px rgba(0, 0, 0, 0.4);;
     }
 
-    &__option {
-      margin: 0 3rem;
-      font-size: $menuOptionFontSize;
-      font-weight: 500;
-
-      &__link {
-        color: $menuOptionColor;
+    &__logo {
+      &__anchor {
         text-decoration: none;
 
-        &:hover {
-          color: $gradientEndingColor;
+        &__title {
+          color: $menuOptionColor;
+          margin: 0;
+          margin-left: 1rem;
+        }
+
+        .svg {
+          &__logo {
+            height: $logoMenuSizeSVG;
+            width: $logoMenuSizeSVG;
+          }
+        }
+      }
+    }
+
+    &__options {
+      .menu-option {
+        font-size: $menuOptionFontSize;
+        font-weight: 500;
+        margin: 0 3rem;
+        text-transform: uppercase;
+
+        &__link {
+          color: $menuOptionColor;
           text-decoration: none;
+
+          &:hover {
+            color: $gradientEndingColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &__action {
+      justify-content: flex-end;
+
+      &__mail-to {
+        a {
+          color: $menuOptionColor;
+          font-size: $menuOptionFontSize;
+          font-weight: 500;
+          letter-spacing: 2px;
+          margin-right: 1rem;
+          text-decoration: none;
+
+          &:hover {
+            color: $actionButtonHoverTextColor;
+          }
         }
       }
     }
@@ -90,20 +137,21 @@
 }
 
 .action {
-  cursor: pointer;
   border: solid 4px;
   border-radius: 30px;
+  cursor: pointer;
   margin: 1rem 4rem;
   padding: 1rem 4rem;
 
   font-size: 1.4rem;
   font-weight: 700;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 
   &__primary {
-    border-color: $primaryButtonBorderColor;
     background-color: $primaryButtonBackgroundColor;
+    border-color: $primaryButtonBorderColor;
     color: $primaryButtonTextColor;
   }
 
@@ -113,8 +161,32 @@
   }
 
   &:hover {
-    border-color: $actionButtonHoverBorderColor;
     background-color: $actionButtonHoverBackgroundColor;
+    border-color: $actionButtonHoverBorderColor;
     color: $actionButtonHoverTextColor;
+  }
+}
+
+.language {
+  justify-content: flex-end;
+
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  margin-right: 1rem;
+  padding-left: 1rem;
+
+  &__option {
+    cursor: pointer;
+    color: $primaryButtonTextColor;
+    min-width: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover {
+      color: $actionButtonHoverTextColor;
+    }
   }
 }
