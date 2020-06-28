@@ -1,0 +1,192 @@
+@import './constants.scss';
+
+.svg {
+  &__wave {
+    &__path {
+      fill: $gradientEndingColor;
+      fill-opacity: 1;
+    }
+  }
+
+  &__logo {
+    fill: $transparent;
+    width: $logoContainerSizeSVG;
+    height: $logoContainerSizeSVG;
+
+    stop:nth-child(1) {
+      // stop-color: $gradientBeginningColor;
+      stop-color: $logoGradientBeginningColor;
+    }
+
+    stop:nth-child(2) {
+      // stop-color: $gradientEndingColor;
+      stop-color: $logoGradientEndingColor;
+    }
+
+    &__path {
+      stroke-width: 7;
+    }
+  }
+}
+
+.welcome {
+  background-image: $welcomeGradient;
+
+  &__container {
+    color: $welcomeTitlesColor;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title {
+      font-size: $welcomeTitleFontSize;
+      margin: 1rem 0;
+    }
+
+    &__subtitle {
+      font-size: $welcomeSubtitleFontSize;
+      margin: 0;
+    }
+
+    &__buttons {
+      margin-top: 4rem;
+    }
+  }
+}
+
+.menu {
+  &__container {
+    $xPadding: 1.3rem;
+    $yPadding: .8rem;
+    $boxWidth: calc(100% - #{2 * $xPadding});
+
+    padding: $yPadding $xPadding;
+    position: fixed;
+    width: $boxWidth;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    transition: background-color 2s ease;
+    &--background {
+      background-color: $gradientBeginningColor;
+      box-shadow: 0 10px 6px rgba(0, 0, 0, 0.4);;
+    }
+
+    &__logo {
+      &__anchor {
+        text-decoration: none;
+
+        &__title {
+          color: $menuOptionColor;
+          margin: 0;
+          margin-left: 1rem;
+        }
+
+        .svg {
+          &__logo {
+            height: $logoMenuSizeSVG;
+            width: $logoMenuSizeSVG;
+          }
+        }
+      }
+    }
+
+    &__options {
+      .menu-option {
+        font-size: $menuOptionFontSize;
+        font-weight: 500;
+        margin: 0 3rem;
+        text-transform: uppercase;
+
+        &__link {
+          color: $menuOptionColor;
+          text-decoration: none;
+
+          &:hover {
+            color: $gradientEndingColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &__action {
+      justify-content: flex-end;
+
+      &__mail-to {
+        a {
+          color: $menuOptionColor;
+          font-size: $menuOptionFontSize;
+          font-weight: 500;
+          letter-spacing: 2px;
+          margin-right: 1rem;
+          text-decoration: none;
+
+          &:hover {
+            color: $actionButtonHoverTextColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.action {
+  border: solid 4px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 1rem 4rem;
+  padding: 1rem 4rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &__primary {
+    background-color: $primaryButtonBackgroundColor;
+    border-color: $primaryButtonBorderColor;
+    color: $primaryButtonTextColor;
+  }
+
+  &__secondary {
+    border-color: $secondaryButtonBorderColor;
+    color: $secondaryButtonTextColor;
+  }
+
+  &:hover {
+    background-color: $actionButtonHoverBackgroundColor;
+    border-color: $actionButtonHoverBorderColor;
+    color: $actionButtonHoverTextColor;
+  }
+}
+
+.language {
+  justify-content: flex-end;
+
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  margin-right: 1rem;
+  padding-left: 1rem;
+
+  &__option {
+    cursor: pointer;
+    color: $primaryButtonTextColor;
+    min-width: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover {
+      color: $actionButtonHoverTextColor;
+    }
+  }
+}
