@@ -1,8 +1,8 @@
 const options = [
   {
     key: 1,
-    name: 'Option',
-    reference: '#option'
+    name: 'About Us',
+    reference: '#about-us'
   },
   {
     key: 2,
