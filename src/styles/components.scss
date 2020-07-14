@@ -56,8 +56,8 @@
 
     .svg__logo {
       animation: float 6s ease-in-out infinite;
+    }
   }
-}
 }
 
 .menu {
@@ -191,6 +191,47 @@
 
     &:hover {
       color: $actionButtonHoverTextColor;
+    }
+  }
+}
+
+.about-us {
+  &__container {
+    padding: 1rem;
+
+    flex-direction: row-reverse;
+
+    &__points {
+      flex-basis: 60%;
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+        margin: 1rem;
+        padding: 1.5rem;
+
+        flex-basis: 40%;
+
+        &__title {
+          margin-bottom: .5rem;
+        }
+
+        &__text {
+          line-height: 1.5rem;
+          text-align: justify;
+          text-justify: inter-word;
+        }
+      }
+    }
+
+    &__header {
+      flex-basis: 40%;
+
+      &__title,
+      &__description {
+        text-align: center;
+      }
     }
   }
 }
