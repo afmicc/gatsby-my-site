@@ -195,11 +195,9 @@
   }
 }
 
-.about-us {
+.section {
   &__container {
     padding: 1rem;
-
-    flex-direction: row-reverse;
 
     &__points {
       flex-basis: 60%;

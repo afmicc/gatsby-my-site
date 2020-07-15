@@ -2,7 +2,9 @@
 
 .d-flex { display: flex; }
 .fd-row { flex-direction: row; }
+.fd-row-reverse { flex-direction: row-reverse; }
 .fd-column { flex-direction: column; }
+.fd-column-reverse { flex-direction: column-reverse; }
 .ai-center { align-items: center; }
 .jc-center { justify-content: center; }
 .fg-1 { flex-grow: 1; }
