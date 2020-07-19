@@ -195,14 +195,13 @@
   }
 }
 
-.about-us {
+.section {
   &__container {
     padding: 1rem;
 
-    flex-direction: row-reverse;
-
     &__points {
       flex-basis: 60%;
+      padding: 3rem 0;
 
       .card {
         background-color: rgba(255, 255, 255, 0.8);
@@ -227,10 +226,49 @@
 
     &__header {
       flex-basis: 40%;
+      z-index: 2;
 
       &__title,
       &__description {
         text-align: center;
+      }
+    }
+  }
+
+  /** Backgrounds **/
+
+  &.bg-right {
+    background-image: url(../assets/section-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    &-color {
+      background-color: #340867;
+
+      .section__container__header {
+        color: white;
+      }
+    }
+  }
+
+  &.bg-left {
+    &::before {
+      background-position: right bottom;
+      background-image: url(../assets/section-bg.svg);
+      background-repeat: no-repeat;
+      content: "";
+      height: 69.3%;
+      position: absolute;
+      transform: scaleX(-1);
+      width: 100%;
+      z-index: 1;
+    }
+
+    &-color {
+      background-color: #340867;
+
+      .section__container__header {
+        color: white;
       }
     }
   }

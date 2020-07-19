@@ -6,8 +6,8 @@ const options = [
   },
   {
     key: 2,
-    name: 'Option',
-    reference: '#option'
+    name: 'Fundamentals',
+    reference: '#fundamentals'
   },
   {
     key: 3,

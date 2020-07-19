@@ -2,6 +2,7 @@ import React from 'react'
 
 import Welcome from '../components/welcome'
 import AboutUs from '../components/AboutUs'
+import Fundamental from '../components/Fundamental'
 
 const Index = () => (
   <>
@@ -9,6 +10,7 @@ const Index = () => (
 
     <Welcome />
     <AboutUs />
+    <Fundamental />
 
     {/* TODO: delete */}
     <div className="vh-100"></div>
