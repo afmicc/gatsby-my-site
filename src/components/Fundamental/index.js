@@ -10,6 +10,7 @@ const Fundamental = () => (
     message="Are you aligned with our principles?"
     cards={cards}
     button={{ title: 'Let‘s build it!', href: '#option'}}
+    background
   />
 );
 

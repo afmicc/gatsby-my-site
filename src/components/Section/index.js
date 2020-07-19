@@ -4,8 +4,14 @@ import { arrayOf, bool, node, number, string, shape } from 'prop-types';
 import Card from './card'
 import ButtonAction from '../common/buttonAction'
 
-const Section = ({ id, title, message, cards, button, headerOnRight }) => console.log('button', button) ||  (
-  <div className="section">
+const Section = ({id, title, message, cards, button, headerOnRight, background }) => console.log('button', button) ||  (
+  <div className={
+    `section ${headerOnRight ?
+                ('bg-right ' + (background ? 'bg-right-color': 'bg-right-default')) :
+                ('bg-left ' + (background ? 'bg-left-color': 'bg-left-default'))
+              }`
+    }
+  >
     <div className={
       `section__container d-flex ${headerOnRight ? 'fd-row-reverse' : ''}`
       }>
@@ -46,6 +52,7 @@ Section.propTypes = {
   title: string.isRequired,
   message: string.isRequired,
   headerOnRight: bool,
+  background: bool,
   cards: arrayOf(
     shape({
       key: number.isRequired,
