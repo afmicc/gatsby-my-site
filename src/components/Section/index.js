@@ -38,7 +38,7 @@ const Section = ({id, title, message, cards, button, headerOnRight, background }
       </div>
       <div className="section__container__points d-flex fw-wrap jc-center">
         {cards && cards.sort((a, b) => a.key - b.key).map((card) =>
-          <Card key={card.key} title={card.title}>
+          <Card key={card.key} title={card.title} color={card.key}>
             {card.content}
           </Card>
         )}

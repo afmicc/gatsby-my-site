@@ -7,10 +7,11 @@ body {
   margin: 0;
 	// font-family: system-ui, sans-serif;
 	font-family: "Montserrat", Sans-serif;
+  background-color: $gradientBeginningColor;
 }
 
 * {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 

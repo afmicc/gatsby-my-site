@@ -13,7 +13,7 @@ const cardContents = [
   },
   {
     key: 3,
-    title: 'Forefront Technologies',
+    title: 'Technologies',
     content:
       <>
         We always build our products with the last technologies validates by the industry. Because that way we are supported and up to date. Being valid along the time.
@@ -21,7 +21,7 @@ const cardContents = [
   },
   {
     key: 2,
-    title: 'Validate earlier',
+    title: 'Validate',
     content:
       <>
         According to our work methodologies, we deliver value in the early steps of the process. So, the clients can validate and improve the product since the beginning. In the best case, you could see how the inversion is returning after a few weeks since the project started.

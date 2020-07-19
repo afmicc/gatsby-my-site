@@ -6,6 +6,20 @@
       fill: $gradientEndingColor;
       fill-opacity: 1;
     }
+
+    &--1 {
+      &__path {
+        fill: $gradientEndingColor;
+        fill-opacity: 1;
+      }
+    }
+
+    &--2 {
+      &__path {
+        fill: $gradientBeginningColor;
+        fill-opacity: 1;
+      }
+    }
   }
 
   &__logo {
@@ -58,6 +72,10 @@
       animation: float 6s ease-in-out infinite;
     }
   }
+}
+
+.wave {
+  background-color: $gradientBeginningColor;
 }
 
 .menu {
@@ -196,6 +214,10 @@
 }
 
 .section {
+  background-color: $gradientBeginningColor;
+  color: white;
+  margin-top: -.3rem;
+
   &__container {
     padding: 1rem;
 
@@ -204,7 +226,7 @@
       padding: 3rem 0;
 
       .card {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: $gradientEndingColor;
         border-radius: 10px;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
         margin: 1rem;
@@ -214,6 +236,30 @@
 
         &__title {
           margin-bottom: .5rem;
+          border-radius: 20px;
+          padding: .5rem 1rem;
+          width: fit-content;
+          text-align: center;
+
+          &--red {
+            background-color: #362626;
+            color: #D55C4A;
+          }
+
+          &--yellow {
+            background-color: #3A362D;
+            color: #F9E077;
+          }
+
+          &--blue {
+            background-color: #272639;
+            color: #6165D6;
+          }
+
+          &--green {
+            background-color: #2E2F2D;
+            color: #85DD91;
+          }
         }
 
         &__text {
@@ -238,7 +284,7 @@
   /** Backgrounds **/
 
   &.bg-right {
-    background-image: url(../assets/section-bg.svg);
+    // background-image: url(../assets/section-bg.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
 
@@ -254,7 +300,7 @@
   &.bg-left {
     &::before {
       background-position: right bottom;
-      background-image: url(../assets/section-bg.svg);
+      // background-image: url(../assets/section-bg.svg);
       background-repeat: no-repeat;
       content: "";
       height: 69.3%;
@@ -265,7 +311,7 @@
     }
 
     &-color {
-      background-color: #340867;
+      background-color: $gradientEndingColor;
 
       .section__container__header {
         color: white;
