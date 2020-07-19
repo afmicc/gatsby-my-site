@@ -234,6 +234,14 @@
 
         flex-basis: 40%;
 
+        &--background-default {
+          background-color: $gradientBeginningColor;
+        }
+
+        &--background-inverse {
+          background-color: $gradientEndingColor;
+        }
+
         &__title {
           margin-bottom: .5rem;
           border-radius: 20px;
