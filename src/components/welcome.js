@@ -2,7 +2,7 @@ import React from 'react';
 
 import Logo from './logo'
 import Menu from './Menu'
-import Wave from './wave'
+import Wave from './Wave'
 import ButtonAction from './common/buttonAction'
 
 import { CONTACT_US, MORE_INFO, getOptionReference} from '../components/Menu/options'
@@ -14,7 +14,7 @@ const Welcome = () => (
       <div className="welcome__container h-100">
         <Logo />
         <h1 className="welcome__container__title">Folks Hub</h1>
-        <h2 className="welcome__container__subtitle">Let‘s build it together &nbsp; ;)</h2>
+        <h2 className="welcome__container__subtitle">Let's build it together</h2>
         <div >
           <div className="welcome__container__buttons d-flex">
             <ButtonAction
