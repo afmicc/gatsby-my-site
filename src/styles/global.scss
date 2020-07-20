@@ -29,3 +29,35 @@ body {
 		transform: translatey(0px);
 	}
 }
+
+.decorator {
+  &--red {
+    background-color: #362626;
+    color: #D55C4A;
+  }
+
+  &--yellow {
+    background-color: #3A362D;
+    color: #F9E077;
+  }
+
+  &--blue {
+    background-color: #272639;
+    color: #6165D6;
+  }
+
+  &--green {
+    background-color: #2E2F2D;
+    color: #85DD91;
+  }
+
+  &--purple {
+    background-color: #553257;
+    color: #D23CD6;
+  }
+
+  &--orange {
+    background-color: #574436;
+    color: #D68344;
+  }
+}
