@@ -4,7 +4,7 @@ import { arrayOf, bool, node, number, string, shape } from 'prop-types';
 import Card from './card'
 import ButtonAction from '../common/buttonAction'
 
-const Section = ({id, title, message, cards, button, headerOnRight, background }) => console.log('button', button) ||  (
+const Section = ({id, title, message, cards, button, headerOnRight, background }) => (
   <div className={
     `section ${headerOnRight ?
                 ('bg-right ' + (background ? 'bg-right-color': 'bg-right-default')) :
