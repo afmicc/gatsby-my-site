@@ -213,7 +213,7 @@
   }
 }
 
-.section {
+.section, .service {
   background-color: $gradientBeginningColor;
   color: white;
   margin-top: -.3rem;
@@ -228,7 +228,7 @@
       .card {
         background-color: $gradientEndingColor;
         border-radius: 10px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+        box-shadow: $body-box-shadow;
         margin: 1rem;
         padding: 1.5rem;
 
@@ -248,7 +248,7 @@
           padding: .5rem 1rem;
           width: fit-content;
           text-align: center;
-          }
+        }
 
         &__text {
           line-height: 1.5rem;
@@ -303,6 +303,37 @@
 
       .section__container__header {
         color: white;
+      }
+    }
+  }
+}
+
+.service {
+  &__container {
+    &__items {
+      margin: 3rem 0;
+      .item {
+        margin: 1rem 2rem;
+
+        &__icon {
+          $icon_size: 5rem;
+
+          border-radius: 100%;
+          padding: 1.5rem;
+          box-shadow: $body-box-shadow;
+
+          svg {
+            width: $icon_size;
+            height: $icon_size;
+          }
+        }
+
+        &__text {
+          margin-top:-10%;
+          padding: 0 1.5rem;
+          min-width: 3rem;
+          text-align: center;
+        }
       }
     }
   }
