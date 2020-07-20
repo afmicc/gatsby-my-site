@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Welcome from '../components/welcome'
-import AboutUs from '../components/AboutUs'
-import Fundamental from '../components/Fundamental'
-import Wave from '../components/Wave'
+import Welcome from 'components/welcome'
+import AboutUs from 'components/AboutUs'
+import Fundamental from 'components/Fundamental'
+import Wave from 'components/Wave'
 
 const Index = () => (
   <>
