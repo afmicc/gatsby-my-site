@@ -5,6 +5,7 @@ import AboutUs from 'components/AboutUs'
 import Fundamental from 'components/Fundamental'
 import Wave from 'components/Wave'
 import Service from 'components/Service'
+import TechStack from 'components/TechStack'
 
 const Index = () => (
   <>
@@ -16,6 +17,8 @@ const Index = () => (
     <Fundamental />
     <Wave number={2} />
     <Service />
+    <TechStack />
+    <Wave number={1} />
 
     {/* TODO: delete */}
     <div className="vh-100"></div>
