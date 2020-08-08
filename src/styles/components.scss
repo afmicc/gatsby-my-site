@@ -456,3 +456,54 @@ svg.arrow {
     transform: rotate(-90deg);
   }
 }
+
+
+.contact {
+  background-color: $gradientEndingColor;
+  color: white;
+  margin-top: -.3rem;
+
+  &__container {
+    padding: 1rem;
+
+    &__header {
+      width: 30%;
+
+      &__title,
+      &__description {
+        text-align: center;
+
+      }
+    }
+
+    &__form {
+      width: 40%;
+
+      &__fields {
+        form input,
+        form textarea {
+          background-color: $gradientBeginningColor;
+          border-radius: 10px;
+          border-style: none;
+          color: white;
+          margin: .5rem 0;
+          padding: 1rem;
+          resize: none;
+
+          &:disabled {
+            color: #ffffff66;
+          }
+        }
+
+        & *:focus {
+          outline: none;
+        }
+
+        & .action {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
