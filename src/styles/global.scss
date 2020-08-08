@@ -3,7 +3,8 @@
 @import './utilityClasses.scss';
 @import './components.scss';
 
-body {
+body,
+textarea {
   margin: 0;
 	// font-family: system-ui, sans-serif;
 	font-family: "Montserrat", Sans-serif;

@@ -11,7 +11,7 @@ const Welcome = () => (
   <>
     <div className="welcome vh-90 d-flex">
       <Menu />
-      <div className="welcome__container h-100">
+      <div className="welcome__container w-100">
         <Logo />
         <h1 className="welcome__container__title">Folks Hub</h1>
         <h2 className="welcome__container__subtitle">Let's build it together</h2>
