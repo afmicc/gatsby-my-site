@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="contact__container d-flex fd-column jc-center ai-center">
         <div className="contact__container__header">
           <h1
-            id="Contact"
+            id="contact"
             className="contact__container__header__title"
           >
             Get Started

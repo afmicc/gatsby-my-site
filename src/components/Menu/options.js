@@ -14,6 +14,11 @@ const options = [
     name: 'Services',
     reference: '#service'
   },
+  {
+    key: 4,
+    name: 'Contact us',
+    reference: '#contact'
+  },
 ]
 
 export const getOptionReference = (index) => {
