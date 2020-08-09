@@ -480,8 +480,18 @@ svg.arrow {
       width: 40%;
 
       &__fields {
-        form input,
-        form textarea {
+        & .action {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+form {
+  input,
+  textarea {
           background-color: $gradientBeginningColor;
           border-radius: 10px;
           border-style: none;
@@ -491,17 +501,58 @@ svg.arrow {
           resize: none;
 
           &:disabled {
-            color: #ffffff66;
+      color: $grayTextColor;
           }
         }
 
         & *:focus {
           outline: none;
         }
+}
 
-        & .action {
-          margin-left: 0;
-          margin-right: 0;
+.footer {
+  color: $grayTextColor;
+
+  &__container {
+    &__cc {
+      margin: 1rem 0;
+      padding: 0 1rem;
+    }
+  }
+
+  .newsletter {
+    color: white;
+
+    &__container {
+      margin-top: -.3rem;
+      padding: 1rem;
+
+      &__title {
+        color: white;
+        margin: auto 0;
+        text-align: center;
+
+        &__subheader {
+          color: $grayTextColor;
+        }
+      }
+
+      &__form {
+        &__email {
+          background-color: $gradientEndingColor;
+          margin: 0 2rem;
+          width: 20rem;
+        }
+      }
+
+      .action {
+        margin: 0;
+        padding: .5rem 4rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
         }
       }
     }

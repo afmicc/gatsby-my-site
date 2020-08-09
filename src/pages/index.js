@@ -7,6 +7,7 @@ import Wave from 'components/Wave'
 import Service from 'components/Service'
 import TechStack from 'components/TechStack'
 import Contact from 'components/Contact'
+import Footer from 'components/Footer'
 
 const Index = () => (
   <>
@@ -22,6 +23,7 @@ const Index = () => (
     <Wave number={1} />
     <Contact />
     <Wave number={2} />
+    <Footer />
   </>
 );
 
