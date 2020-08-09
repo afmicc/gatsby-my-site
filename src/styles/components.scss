@@ -492,22 +492,22 @@ svg.arrow {
 form {
   input,
   textarea {
-          background-color: $gradientBeginningColor;
-          border-radius: 10px;
-          border-style: none;
-          color: white;
-          margin: .5rem 0;
-          padding: 1rem;
-          resize: none;
+    background-color: $gradientBeginningColor;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    margin: .5rem 0;
+    padding: 1rem;
+    resize: none;
 
-          &:disabled {
+    &:disabled {
       color: $grayTextColor;
-          }
-        }
+    }
+  }
 
-        & *:focus {
-          outline: none;
-        }
+  & *:focus {
+    outline: none;
+  }
 }
 
 .footer {
@@ -553,6 +553,66 @@ form {
     }
   }
 
+  .links {
+    &__container{
+      margin: 2.5rem 0 1.5rem 0;
+      padding: 1rem;
+
+      align-items: flex-start;
+
+      &__section {
+        padding: 0 2rem;
+
+        flex-basis: 25%;
+
+        &__name {
+          color: white;
+        }
+
+        ul {
+          padding: 0;
+
+          li {
+            list-style-type: none;
+            margin-top: 1rem;
+
+            a {
+              color: $grayTextColor;
+              text-decoration: none;
+
+              &:hover {
+                color: white;
+              }
+            }
+          }
+        }
+
+        &__medias {
+          li {
+            float: left;
+
+            a {
+              margin: 0 1rem;
+
+              svg {
+                $icons_size: 2rem;
+
+                width: $icons_size;
+                height: $icons_size;
+
+                fill: $grayTextColor;
+
+                &:hover {
+                  fill: white;
+                }
+
+                .svg__clutch {
+                  // &__wraper { fill: $grayTextColor; }
+                  // &__circle { fill: $grayTextColor; }
+                }
+              }
+            }
+          }
         }
       }
     }
